@@ -1,38 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .App {
   text-align: center;
-}
+  font-family: "Century Gothic", CenturyGothic;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 2rem;
+  padding-bottom: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  margin-top: 80px;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: #339989;
+}
+button {
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #131515;
   color: white;
+  font-size: 0.5em;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 5px 5px 5px #d6d8d8;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+  border: 20px solid #131515;
+  height: 40rem;
+  margin: 50px;
+  background-color: #fffafb;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggleATM {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  background-color: #2b2c28;
+}
+.toggleComponent {
+  font-size: 1.2rem;
+  background-color: #7de2d1;
+}
+input {
+  line-height: 1.5em;
+  width: 10em;
+  padding: 5px;
+  font-size: 0.5em;
+  margin-top: 25px;
+}
+.transactionBtn {
+  font-size: 0.5em;
+  background-color: #339989;
+}
+h2 {
+  margin: 30px;
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 2rem;
 }
